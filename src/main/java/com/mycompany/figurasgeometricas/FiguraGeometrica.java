@@ -1,7 +1,7 @@
 package com.mycompany.figurasgeometricas;
 
 
-public class FiguraGeometrica {
+abstract class FiguraGeometrica { //Complejidad O(1)
         private String nombre;
         private String color;
 
@@ -26,11 +26,7 @@ public class FiguraGeometrica {
         this.color = color;
     }
     
-    public double obtenerArea(){
-        return 0;
-    }
+    public abstract double obtenerArea();
     
-    public double obtenerPerimetro(){
-        return 0;
-    }
+    public abstract double obtenerPerimetro();
 }

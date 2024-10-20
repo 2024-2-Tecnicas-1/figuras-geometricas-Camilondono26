@@ -1,6 +1,6 @@
 package com.mycompany.figurasgeometricas;
 
-public class Circulo extends FiguraGeometrica {
+public class Circulo extends FiguraGeometrica { //Complejidad O(1)
 
     private double radio;
 
@@ -19,14 +19,14 @@ public class Circulo extends FiguraGeometrica {
 
     @Override
     public double obtenerArea() {
-        double areaCirculo = Math.PI * (radio * radio);
-        return areaCirculo;
+        double areaCirculo = Math.PI * (radio * radio); 
+        return areaCirculo; //Complejidad O(1)
     }
 
     @Override
     public double obtenerPerimetro() {
         double perimetroCirculo = 2 * Math.PI * radio;
-        return perimetroCirculo;
+        return perimetroCirculo; //Complejidad O(1)
     }
 
 }
